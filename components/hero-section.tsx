@@ -2,6 +2,7 @@
 
 import { Button } from '@/components/ui/button'
 import { ArrowDown } from 'lucide-react'
+import Link from 'next/link'
 
 export function HeroSection() {
   return (
@@ -45,11 +46,12 @@ export function HeroSection() {
             EXPLORER LES DESTINATIONS
           </Button>
           <Button
+            asChild
             size="lg"
             variant="outline"
             className="border-2 border-amber-500/50 text-foreground hover:bg-amber-500/10 hover:border-amber-500 px-8 py-6 text-base font-semibold"
           >
-            NOUS CONTACTER
+            <Link href="/contact">NOUS CONTACTER</Link>
           </Button>
         </div>
 

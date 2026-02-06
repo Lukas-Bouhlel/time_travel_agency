@@ -302,11 +302,11 @@ export default async function DestinationPage({ params }: { params: Promise<{ sl
                   </div>
                 </div>
 
-                <Button className="w-full bg-gradient-to-r from-amber-500 to-yellow-600 text-black font-semibold hover:from-amber-400 hover:to-yellow-500 mb-3">
-                  RÉSERVER MAINTENANT
+                <Button asChild className="w-full bg-gradient-to-r from-amber-500 to-yellow-600 text-black font-semibold hover:from-amber-400 hover:to-yellow-500 mb-3">
+                  <Link href="/contact">RÉSERVER MAINTENANT</Link>
                 </Button>
-                <Button variant="outline" className="w-full border-amber-500/50 hover:bg-amber-500/10">
-                  DEMANDER UN DEVIS
+                <Button asChild variant="outline" className="w-full border-amber-500/50 hover:bg-amber-500/10">
+                  <Link href="/contact">DEMANDER UN DEVIS</Link>
                 </Button>
 
                 {/* Practical Info */}

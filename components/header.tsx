@@ -2,6 +2,7 @@
 
 import { Button } from '@/components/ui/button'
 import { Menu } from 'lucide-react'
+import Link from 'next/link'
 
 export function Header() {
   return (
@@ -14,11 +15,12 @@ export function Header() {
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <Button 
-              variant="outline" 
+            <Button
+              asChild
+              variant="outline"
               className="hidden md:inline-flex border-border text-foreground hover:bg-accent hover:text-accent-foreground bg-transparent"
             >
-              NOUS CONTACTER
+              <Link href="/contact">NOUS CONTACTER</Link>
             </Button>
             <Button className="md:hidden" variant="ghost" size="icon">
               <Menu className="h-5 w-5" />
