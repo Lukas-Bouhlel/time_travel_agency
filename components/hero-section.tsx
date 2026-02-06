@@ -36,6 +36,23 @@ export function HeroSection() {
           {'Discover the finest moments in history with unparalleled elegance and precision. Your temporal journey awaits.'}
         </p>
 
+        <div className="flex flex-col sm:flex-row gap-4 mb-16">
+          <Button
+            size="lg"
+            onClick={() => document.getElementById('destinations')?.scrollIntoView({ behavior: 'smooth' })}
+            className="bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-600 text-black font-semibold hover:from-amber-400 hover:to-yellow-500 shadow-2xl hover:shadow-amber-500/50 transition-all duration-300 px-8 py-6 text-base"
+          >
+            EXPLORER LES DESTINATIONS
+          </Button>
+          <Button
+            size="lg"
+            variant="outline"
+            className="border-2 border-amber-500/50 text-foreground hover:bg-amber-500/10 hover:border-amber-500 px-8 py-6 text-base font-semibold"
+          >
+            NOUS CONTACTER
+          </Button>
+        </div>
+
         <div className="flex flex-col items-center gap-2 animate-bounce">
           <span className="text-xs tracking-wider text-muted-foreground uppercase">Scroll to Reveal</span>
           <ArrowDown className="h-5 w-5 text-muted-foreground" />

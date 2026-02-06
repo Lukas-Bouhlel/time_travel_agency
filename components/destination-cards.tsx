@@ -38,7 +38,7 @@ const destinations = [
 
 export function DestinationCards() {
   return (
-    <section className="py-24 bg-background">
+    <section id="destinations" className="py-24 bg-background scroll-mt-20">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
           <p className="text-sm tracking-[0.3em] text-muted-foreground mb-4 uppercase">
