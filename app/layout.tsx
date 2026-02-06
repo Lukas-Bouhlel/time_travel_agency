@@ -16,7 +16,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Chronos Journeys - Luxury Time Travel',
+  title: 'Time Travel Agency - Luxury Time Travel',
   description: 'Experience history with unparalleled elegance. Your journey through time begins here.',
   generator: 'v0.app',
 }

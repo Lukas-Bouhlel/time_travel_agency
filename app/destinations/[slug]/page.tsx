@@ -130,8 +130,9 @@ export function generateStaticParams() {
   ]
 }
 
-export default function DestinationPage({ params }: { params: { slug: string } }) {
-  const destination = destinationsData[params.slug as keyof typeof destinationsData]
+export default async function DestinationPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const destination = destinationsData[slug as keyof typeof destinationsData]
 
   if (!destination) {
     notFound()

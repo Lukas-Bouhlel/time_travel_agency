@@ -10,7 +10,7 @@ export function Header() {
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center gap-2">
             <div className="font-serif text-2xl font-light tracking-wider text-foreground">
-              chronos
+              Time Travel Agency
             </div>
           </div>
           <div className="flex items-center gap-4">

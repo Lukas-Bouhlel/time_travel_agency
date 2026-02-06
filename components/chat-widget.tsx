@@ -55,7 +55,7 @@ export function ChatWidget() {
   const [messages, setMessages] = useState([
     {
       role: 'assistant',
-      content: 'Bienvenue chez Chronos Journeys ! 🕰️ Posez-moi vos questions sur les voyages temporels, nos destinations, ou nos tarifs. Comment puis-je vous aider ?',
+      content: 'Bienvenue chez Time Travel Agency ! 🕰️ Posez-moi vos questions sur les voyages temporels, nos destinations, ou nos tarifs. Comment puis-je vous aider ?',
     },
   ])
 
@@ -100,7 +100,7 @@ export function ChatWidget() {
           <div className="bg-gradient-to-r from-amber-600 via-yellow-500 to-amber-600 text-black p-5 border-b border-amber-400/30">
             <div className="flex items-center justify-between">
               <div>
-                <h3 className="font-serif text-xl font-semibold tracking-wide">Chronos Concierge</h3>
+                <h3 className="font-serif text-xl font-semibold tracking-wide">TTA Concierge</h3>
                 <p className="text-xs font-medium opacity-80">Disponible à travers le temps</p>
               </div>
               <div className="h-3 w-3 rounded-full bg-emerald-400 animate-pulse shadow-lg shadow-emerald-400/50" />

@@ -41,7 +41,7 @@ export function AboutSection() {
             Depuis 2010
           </p>
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-light text-foreground mb-6">
-            {'Chronos Journeys'}
+            {'Time Travel Agency'}
           </h2>
           <p className="text-muted-foreground max-w-3xl mx-auto text-lg leading-relaxed">
             Pionniers du voyage temporel de luxe, nous offrons des expériences uniques à travers les époques.
