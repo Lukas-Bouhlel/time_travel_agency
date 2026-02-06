@@ -8,6 +8,12 @@ import parisImg from '@/assets/images/Destination1/paris.png'
 import dinoImg from '@/assets/images/Destination2/dino.png'
 import florenceImg from '@/assets/images/Destination3/florence.png'
 
+const getAssetPath = (path: string) => {
+  const isProd = process.env.NODE_ENV === 'production';
+  const repoName = '/Ttime_travel_agency';
+  return isProd ? `${repoName}${path}` : path;
+};
+
 const destinationsData = {
   'paris-1889': {
     slug: 'paris-1889',
@@ -159,7 +165,7 @@ export default async function DestinationPage({ params }: { params: Promise<{ sl
           playsInline
           className="absolute inset-0 h-full w-full object-cover"
         >
-          <source src={destination.video} type="video/mp4" />
+          <source src={getAssetPath(destination.video)} type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
 
