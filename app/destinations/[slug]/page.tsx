@@ -9,12 +9,6 @@ import dinoImg from '@/assets/images/Destination2/dino.png'
 import florenceImg from '@/assets/images/Destination3/florence.png'
 import HeroVideoSection from '@/components/hero-video-section'
 
-const getAssetPath = (path: string) => {
-  const isProd = process.env.NODE_ENV === 'production';
-  const repoName = '/time_travel_agency';
-  return isProd ? `${repoName}${path}` : path;
-};
-
 const destinationsData = {
   'paris-1889': {
     slug: 'paris-1889',

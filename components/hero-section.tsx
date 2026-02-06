@@ -7,16 +7,14 @@ import Link from 'next/link'
 export function HeroSection() {
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      {/* Video Background */}
       <div className="absolute inset-0 z-0">
         <video
           autoPlay
           loop
-          muted
           playsInline
           className="h-full w-full object-cover opacity-60"
         >
-          <source src="https://cdn.pixabay.com/video/2022/11/10/138468-768940488_large.mp4" type="video/mp4" />
+          <source src="/videos/destination_final.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background" />
       </div>
