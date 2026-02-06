@@ -8,7 +8,7 @@ export default function Page() {
     <main className="min-h-screen bg-background text-foreground">
       <Header />
       <HeroSection />
-      <Page/>
+      <DestinationCards />
       <ChatWidget />
     </main>
   )
