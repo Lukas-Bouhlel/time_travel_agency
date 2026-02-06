@@ -151,13 +151,6 @@ export default async function DestinationPage({ params }: { params: Promise<{ sl
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative h-[70vh] w-full overflow-hidden">
-        <Image
-          src={destination.image}
-          alt={destination.title}
-          fill
-          className="object-cover"
-          priority
-        />
         <video
           autoPlay
           muted
