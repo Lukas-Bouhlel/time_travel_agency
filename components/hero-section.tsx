@@ -4,6 +4,12 @@ import { Button } from '@/components/ui/button'
 import { ArrowDown } from 'lucide-react'
 import Link from 'next/link'
 
+const getAssetPath = (path: string) => {
+  const isProd = process.env.NODE_ENV === 'production';
+  const repoName = '/time_travel_agency';
+  return isProd ? `${repoName}${path}` : path;
+};
+
 export function HeroSection() {
   return (
     <section className="relative h-screen w-full overflow-hidden">
@@ -11,10 +17,11 @@ export function HeroSection() {
         <video
           autoPlay
           loop
+          muted
           playsInline
           className="h-full w-full object-cover opacity-60"
         >
-          <source src="/videos/destination_final.mp4" type="video/mp4" />
+          <source src={getAssetPath("/videos/destination_final.mp4")} type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background" />
       </div>
