@@ -16,6 +16,7 @@ const destinationsData = {
     title: 'L\'Exposition Universelle de Paris',
     subtitle: 'Admirez la Tour Eiffel fraîchement inaugurée',
     image: parisImg,
+    video: '/videos/destination1.mp4',
     price: '38 000€',
     duration: '7 jours',
     maxTravelers: 12,
@@ -53,6 +54,7 @@ const destinationsData = {
     title: 'Safari Préhistorique',
     subtitle: 'Observez les derniers dinosaures avant leur extinction',
     image: dinoImg,
+    video: '/videos/destination2.mp4',
     price: '85 000€',
     duration: '7 jours',
     maxTravelers: 8,
@@ -90,6 +92,7 @@ const destinationsData = {
     title: 'Florence, Berceau de la Renaissance',
     subtitle: 'Côtoyez Michel-Ange et Léonard de Vinci',
     image: florenceImg,
+    video: '/videos/destination3.mp4',
     price: '45 000€',
     duration: '7 jours',
     maxTravelers: 12,
@@ -149,6 +152,15 @@ export default async function DestinationPage({ params }: { params: Promise<{ sl
           className="object-cover"
           priority
         />
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 h-full w-full object-cover"
+        >
+          <source src={destination.video} type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
 
         {/* Back Button */}
