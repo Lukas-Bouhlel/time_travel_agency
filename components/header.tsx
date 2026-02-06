@@ -18,7 +18,7 @@ export function Header() {
               variant="outline" 
               className="hidden md:inline-flex border-border text-foreground hover:bg-accent hover:text-accent-foreground bg-transparent"
             >
-              CONTACT SALES
+              NOUS CONTACTER
             </Button>
             <Button className="md:hidden" variant="ghost" size="icon">
               <Menu className="h-5 w-5" />

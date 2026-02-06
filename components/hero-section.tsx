@@ -23,17 +23,17 @@ export function HeroSection() {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 lg:px-8 h-full flex flex-col items-center justify-center text-center">
         <p className="text-sm tracking-[0.3em] text-muted-foreground mb-6 uppercase">
-          Journey Beyond · Time Itself
+          Voyagez Au-Delà · Du Temps
         </p>
         
         <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-light text-balance mb-6 text-foreground leading-tight">
-          {'Experience Without'}
+          {'Vivez Sans'}
           <br />
-          {'Limitation'}
+          {'Limites'}
         </h1>
         
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-12 leading-relaxed">
-          {'Discover the finest moments in history with unparalleled elegance and precision. Your temporal journey awaits.'}
+          {'Découvrez les plus grands moments de l\'histoire avec une élégance et une précision inégalées. Votre voyage temporel vous attend.'}
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 mb-16">
@@ -54,7 +54,7 @@ export function HeroSection() {
         </div>
 
         <div className="flex flex-col items-center gap-2 animate-bounce">
-          <span className="text-xs tracking-wider text-muted-foreground uppercase">Scroll to Reveal</span>
+          <span className="text-xs tracking-wider text-muted-foreground uppercase">Défiler pour découvrir</span>
           <ArrowDown className="h-5 w-5 text-muted-foreground" />
         </div>
       </div>

@@ -16,8 +16,8 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Time Travel Agency - Luxury Time Travel',
-  description: 'Experience history with unparalleled elegance. Your journey through time begins here.',
+  title: 'Time Travel Agency - Voyages Temporels de Luxe',
+  description: 'Vivez l\'histoire avec une élégance inégalée. Votre voyage à travers le temps commence ici.',
   generator: 'v0.app',
 }
 
@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="fr" className="dark">
       <body className={`${inter.variable} ${cormorant.variable} font-sans antialiased`}>{children}</body>
     </html>
   )

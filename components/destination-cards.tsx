@@ -42,13 +42,13 @@ export function DestinationCards() {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
           <p className="text-sm tracking-[0.3em] text-muted-foreground mb-4 uppercase">
-            Curated Experiences
+            Expériences Sur Mesure
           </p>
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-light text-foreground mb-6">
-            {'Temporal Destinations'}
+            {'Destinations Temporelles'}
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg leading-relaxed">
-            {'Each journey is meticulously crafted to ensure authenticity, safety, and unforgettable moments across the timeline.'}
+            {'Chaque voyage est méticuleusement conçu pour garantir authenticité, sécurité et moments inoubliables à travers les époques.'}
           </p>
         </div>
 
@@ -88,7 +88,7 @@ export function DestinationCards() {
                 </p>
                 <Button asChild variant="ghost" className="w-full justify-between group/btn hover:bg-accent hover:text-accent-foreground">
                   <Link href={`/destinations/${destination.slug}`}>
-                    <span className="text-sm tracking-wide">LEARN MORE</span>
+                    <span className="text-sm tracking-wide">EN SAVOIR PLUS</span>
                     <ArrowRight className="h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
                   </Link>
                 </Button>
@@ -142,7 +142,7 @@ export function DestinationCards() {
 
     //               {/* Ici, le Button ne contient PAS de Link, car le parent est déjà un Link */}
     //               <div className="inline-flex items-center justify-between w-full p-2 px-4 rounded-md border border-transparent group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
-    //                 <span className="text-sm tracking-wide font-medium">LEARN MORE</span>
+    //                 <span className="text-sm tracking-wide font-medium">EN SAVOIR PLUS</span>
     //                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
     //               </div>
     //             </div>

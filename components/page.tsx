@@ -79,7 +79,7 @@ export default function DestinationPage() {
                 <div className="relative z-10 container mx-auto px-4 lg:px-8 h-full flex flex-col justify-center">
                     <Link href="/" className="inline-flex items-center text-muted-foreground hover:text-foreground mb-6 transition-colors w-fit">
                         <ArrowLeft className="mr-2 h-4 w-4" />
-                        Back to Timeline
+                        Retour à l'accueil
                     </Link>
                     <div className="flex items-center gap-3 mb-4">
                         <span className="text-sm tracking-wider text-accent uppercase font-medium">
@@ -98,7 +98,7 @@ export default function DestinationPage() {
             <section className="container mx-auto px-4 lg:px-8 py-12">
                 <div className="grid lg:grid-cols-2 gap-12">
                     <div>
-                        <h2 className="font-serif text-3xl font-light mb-6">Experience Overview</h2>
+                        <h2 className="font-serif text-3xl font-light mb-6">Présentation</h2>
                         <p className="text-muted-foreground text-lg leading-relaxed mb-8">
                             {destination.longDescription}
                         </p>
@@ -107,20 +107,20 @@ export default function DestinationPage() {
                             <div className="flex items-start gap-3">
                                 <Clock className="h-5 w-5 text-accent mt-1" />
                                 <div>
-                                    <h3 className="font-medium mb-1">Duration</h3>
+                                    <h3 className="font-medium mb-1">Durée</h3>
                                     <p className="text-sm text-muted-foreground">{destination.duration}</p>
                                 </div>
                             </div>
                             <div className="flex items-start gap-3">
                                 <Calendar className="h-5 w-5 text-accent mt-1" />
                                 <div>
-                                    <h3 className="font-medium mb-1">Best Time to Visit</h3>
-                                    <p className="text-sm text-muted-foreground">Year Round</p>
+                                    <h3 className="font-medium mb-1">Meilleure période</h3>
+                                    <p className="text-sm text-muted-foreground">Toute l'année</p>
                                 </div>
                             </div>
                         </div>
 
-                        <h3 className="font-serif text-2xl font-light mb-4">Journey Highlights</h3>
+                        <h3 className="font-serif text-2xl font-light mb-4">Points forts du voyage</h3>
                         <ul className="space-y-3 mb-8">
                             {destination.highlights.map((highlight, index) => (
                                 <li key={index} className="flex items-center gap-3 text-muted-foreground">
@@ -131,7 +131,7 @@ export default function DestinationPage() {
                         </ul>
 
                         <Button size="lg" className="w-full sm:w-auto">
-                            BOOK THIS JOURNEY
+                            RÉSERVER CE VOYAGE
                         </Button>
                     </div>
 
