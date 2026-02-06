@@ -10,7 +10,7 @@ import florenceImg from '@/assets/images/Destination3/florence.png'
 
 const getAssetPath = (path: string) => {
   const isProd = process.env.NODE_ENV === 'production';
-  const repoName = '/Ttime_travel_agency';
+  const repoName = '/time_travel_agency';
   return isProd ? `${repoName}${path}` : path;
 };
 
