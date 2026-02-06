@@ -7,6 +7,7 @@ import { ArrowLeft, Clock, Users, Shield, Calendar, MapPin, Star } from 'lucide-
 import parisImg from '@/assets/images/Destination1/paris.png'
 import dinoImg from '@/assets/images/Destination2/dino.png'
 import florenceImg from '@/assets/images/Destination3/florence.png'
+import HeroVideoSection from '@/components/hero-video-section'
 
 const getAssetPath = (path: string) => {
   const isProd = process.env.NODE_ENV === 'production';
@@ -149,48 +150,7 @@ export default async function DestinationPage({ params }: { params: Promise<{ sl
 
   return (
     <main className="min-h-screen bg-background">
-      {/* Hero Section */}
-      <section className="relative h-[70vh] w-full overflow-hidden">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 h-full w-full object-cover"
-        >
-          <source src={getAssetPath(destination.video)} type="video/mp4" />
-        </video>
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
-
-        {/* Back Button */}
-        <div className="absolute top-6 left-6 z-20">
-          <Button asChild variant="outline" className="bg-background/80 backdrop-blur-sm">
-            <Link href="/">
-              <ArrowLeft className="h-4 w-4 mr-2" />
-              Retour
-            </Link>
-          </Button>
-        </div>
-
-        {/* Content */}
-        <div className="absolute bottom-0 left-0 right-0 z-10 container mx-auto px-4 lg:px-8 pb-12">
-          <div className="flex items-center gap-3 mb-4">
-            <span className="text-sm tracking-wider text-amber-500 uppercase font-medium">
-              {destination.era}
-            </span>
-            <span className="text-sm text-muted-foreground">·</span>
-            <span className="text-sm text-muted-foreground">{destination.year}</span>
-          </div>
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-light text-foreground mb-4">
-            {destination.title}
-          </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl">
-            {destination.subtitle}
-          </p>
-        </div>
-      </section>
-
-      {/* Quick Info */}
+      <HeroVideoSection destination={destination} />
       <section className="py-8 border-y border-border bg-zinc-900/50">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -233,22 +193,16 @@ export default async function DestinationPage({ params }: { params: Promise<{ sl
           </div>
         </div>
       </section>
-
-      {/* Main Content */}
       <section className="py-16">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid lg:grid-cols-3 gap-12">
-            {/* Left Column */}
             <div className="lg:col-span-2 space-y-12">
-              {/* Description */}
               <div>
                 <h2 className="font-serif text-3xl font-light mb-6">Présentation</h2>
                 <p className="text-muted-foreground text-lg leading-relaxed">
                   {destination.description}
                 </p>
               </div>
-
-              {/* Highlights */}
               <div>
                 <h2 className="font-serif text-3xl font-light mb-6">Points forts</h2>
                 <div className="grid gap-3">
@@ -260,8 +214,6 @@ export default async function DestinationPage({ params }: { params: Promise<{ sl
                   ))}
                 </div>
               </div>
-
-              {/* Included */}
               <div>
                 <h2 className="font-serif text-3xl font-light mb-6">Inclus dans le forfait</h2>
                 <div className="grid md:grid-cols-2 gap-3">
@@ -274,8 +226,6 @@ export default async function DestinationPage({ params }: { params: Promise<{ sl
                 </div>
               </div>
             </div>
-
-            {/* Right Column - Booking Card */}
             <div className="lg:col-span-1">
               <Card className="sticky top-24 p-6 border-2 border-amber-500/20 bg-zinc-900">
                 <div className="mb-6">
